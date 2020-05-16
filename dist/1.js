@@ -78,6 +78,9 @@ $(document).ready(function(){
                     $(arr_menu[j]).removeClass('active-menu');
                 }
                 $(arr_menu[i]).addClass('active-menu');
+                $('.mobile-menu-icon').removeClass('active-menu');
+                $('.menu').removeClass('show-menu');
+                $('.background-black').removeClass('show-background-black');
             }
             if (i == vt_scroll_menu.length -1) {
                 if ($(this).scrollTop() > ($(vt_scroll_menu[i]).offset().top - 500)) {

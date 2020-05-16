@@ -375,9 +375,9 @@ main img{
 .education .year{
 	width: 40%;
 	direction: inline-block;
-	font-size: 3em;
+	font-size: 30px;
 	font-weight: bold;
-	padding: 1.2em 0;
+	padding: 50px 0;
 	text-align: center;
 	border: 2px solid white;
 }
@@ -738,7 +738,7 @@ footer{
 		width: 50%;
 		transform: translateX(-100%);
 		transition: .5s;
-		overflow-y: scroll;
+		overflow-y: hidden;
 	}
 	.load-web-4.menu{
 		transform: translateX(-100%);
@@ -789,7 +789,7 @@ footer{
 
 @media (max-width: 530px){
 	.education .year{
-		font-size: 2.5em;
+		font-size: 30px;
 		padding: 1em 0;
 	}
 
@@ -810,9 +810,6 @@ footer{
 
 @media (max-width: 465px){
 
-	.menu{
-		width: 100%;
-	}
 	aside img{
 		width: 70%;
 		position: absolute;
@@ -1020,19 +1017,10 @@ footer{
 		opacity: 0;
 		visibility: hidden;
 	}
-	25%{
+	70%{
 		transform: translateX(-20%);
 		opacity: 1;
 		visibility: visible;
-	}
-	50%{
-		transform: translateX(15%);
-	}
-	75%{
-		transform: translateX(-10%);
-	}
-	90%{
-		transform: translateX(5%);
 	}
 	100%{
 		transform: translateX(0);
@@ -1054,29 +1042,14 @@ footer{
 
 @-webkit-keyframes three_animation{
 	0%{
-		transform: translate(100%, 10%);
+		transform: scale(0);
 		opacity: 0;
 		visibility: hidden;
 	}
-	20%{
-		transform: translate(-15%, -10%);
+	100%{
+		transform: scale(1);
 		opacity: 1;
 		visibility: visible;
-	}
-	40%{
-		transform: translate(15%, 7%);
-	}
-	55%{
-		transform: translate(-10%, 7%);
-	}
-	70%{
-		transform: translate(10%, -10%);
-	}
-	90%{
-		transform: translate(-5%, 5%);
-	}
-	100%{
-		transform: translate(0, 0);
 	}
 }
 
@@ -1267,7 +1240,7 @@ footer{
         width: 0%;
     }
     to {
-        width: 35%;
+        width: 25%;
     }
 }
 
@@ -1276,7 +1249,7 @@ footer{
         width: 0%;
     }
     to {
-        width: 40%;
+        width: 35%;
     }
 }
 
